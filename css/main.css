@@ -37,12 +37,6 @@ h3 {
 	font-size: 0.75em;
 }
 
-p {
-	font-size: 0.875em;
-	line-height: 21px;
-    padding: 0 30px;
-}
-
 /*The widths are in a percentage!*/
 header {
     margin: auto;
@@ -50,18 +44,24 @@ header {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+	width: 100%;
 }
 
 header h1 {
 	margin: auto;
 	border-bottom: 3px solid #77a466;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	text-align: center;
+	width: 100%;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 46px 0;
+	width: 100%;
+
 }
 header nav ul {
 	padding: 0;
@@ -113,12 +113,7 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 90%;
     border-top: 1px solid #eee;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-flow: column wrap;
 }
 
 .menu {
@@ -143,15 +138,26 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
-		border-top: 3px solid #eee;
-		margin: auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	border-top: 3px solid #eee;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+/*Tablet Styles*/
+@media all and (min-width:768px) {
+
+}
+
+/*Desktop Styles*/
+@media all and (min-width:1200px) {
+	
 }
